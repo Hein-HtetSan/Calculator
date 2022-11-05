@@ -50,7 +50,7 @@ class Calculator:
         self.create_clear_button()
         self.create_equal_button()
         self.create_square_button()
-        self.create_sqrt_button();
+        self.create_sqrt_button()
     
     def create_display_labels(self):
         total_label = tk.Label(self.display_frame, text=self.total_expression, anchor=tk.E, bg=LIGHT_GRAY, fg=LABEL_COLOR, padx=24, font=SMALL_FONT_STYLE)
@@ -109,7 +109,7 @@ class Calculator:
         self.total_label.config(text=expression)
 
     def update_label(self):
-        self.label.config(text=self.current_expression[:11])
+        self.label.config(text=self.current_expression)
 
     def add_to_expression(self, value):
         self.current_expression += str(value)
